@@ -16,6 +16,7 @@ jobs:
             
             export AWS_PROFILE=udacity
             aws configure set aws_session_token $AWS_Session_Token 
+            aws configure --profile udacity
             aws configure list
             
             
