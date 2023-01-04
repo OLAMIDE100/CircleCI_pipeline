@@ -11,11 +11,12 @@ jobs:
       - run:
           name: Create network Stack
           command: |
-            aws configure list
+            
             aws configure set profile udacity
             aws configure set aws_session_token $AWS_Session_Token 
+            aws configure list
             
-            cd .. | sh create.sh MideNetwork network.yml network-parameters.json
+#cd .. | sh create.sh MideNetwork network.yml network-parameters.json
             
 
    
