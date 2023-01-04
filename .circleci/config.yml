@@ -11,7 +11,8 @@ jobs:
       - run:
           name: Create network Stack
           command: |
-            aws configure set aws_session_token $AWS_Session_Token
+            aws configure set aws_session_token $AWS_Session_Token --profile default
+            
             cd .. | sh create.sh MideNetwork network.yml network-parameters.json
             
 
