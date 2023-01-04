@@ -1,0 +1,14 @@
+[
+	{
+		"ParameterKey": "EnvironmentName",
+		"ParameterValue": "MideUdacityProject"
+	},
+	{
+		"ParameterKey": "imageid",
+		"ParameterValue": "ami-0574da719dca65348"
+	},
+	{
+		"ParameterKey": "keyname",
+		"ParameterValue": "UdacityKeyPair"
+	}
+]

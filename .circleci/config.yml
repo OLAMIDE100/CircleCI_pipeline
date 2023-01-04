@@ -3,28 +3,21 @@ version: 2.1
 
 
 jobs:
-  print-hello:
-   
+  create_network_infrastructure: 
     docker:
-      - image: circleci/node:13.8.0
-
+      - image: amazon/aws-cli
     steps:
-      - run: echo hello
+      - checkout
+      - run:
+          name: Create network Stack
+          command: |
+            sh create.sh MideNetwork network.yaml network-parameters.json
 
-  print-name:
-   
-    docker:
-      - image: circleci/node:13.8.0
-
-    steps:
-      - run: echo $Name
    
 
 
 workflows:
-  say-hello-workflow:
+  infrastructure provisioning:
     jobs:
-      - print-hello
-      - print-name:
-          requires:
-            - print-hello
+      - create_network_infrastructure
+   
