@@ -11,7 +11,7 @@ jobs:
       - run:
           name: Create network Stack
           command: |
-            cd .. | sh create.sh MideNetwork network.yaml network-parameters.json
+            cd .. | sh create.sh MideNetwork network.yml network-parameters.json
             
 
    
