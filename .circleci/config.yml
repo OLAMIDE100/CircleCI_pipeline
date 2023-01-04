@@ -15,7 +15,7 @@ jobs:
           command: |
             
             export AWS_PROFILE=udacity
-            aws configure set aws_session_token $AWS_Session_Token aws_access_key_id $AWS_ACCESS_KEY_ID aws_secret_access_key $AWS_SECRET_ACCESS_KEY
+            aws configure set aws_session_token $AWS_Session_Token set aws_access_key_id $AWS_ACCESS_KEY_ID set aws_secret_access_key $AWS_SECRET_ACCESS_KEY
             aws configure list
             
             
