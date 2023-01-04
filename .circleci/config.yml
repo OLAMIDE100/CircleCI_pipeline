@@ -18,6 +18,7 @@ jobs:
             export AWS_PROFILE=udacity
             aws configure set aws_session_token $AWS_Session_Token 
             aws configure list
+            aws configure
             
             cd .. | sh create.sh MideNetwork network.yml network-parameters.json
             
